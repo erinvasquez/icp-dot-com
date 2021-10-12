@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- This
+    is a
+    comment, at least out here
+    -->
+
+    <!--
+    -->
+
+<head>
+    <title>Resume</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Erin Vasquez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- This makes it pretty on all screens apparently -->
+    <meta name="description" content="My professional Resume." />
+    <meta name="revised" content="Erin Vasquez, 1/13/2021" />
+    <meta http-equiv="Content-Script-Type" content="text/JavaScript" />
+    <link rel="stylesheet" href="resumeStyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div>
+
+        <div id="oneHeader" class="tabHeader">
+            <h2>Skills and Qualifications</h2>
+        </div>
+
+        <div id="twoHeader" class="tabHeader">
+            <h2>Work and Professional Experience</h2>
+        </div>
+
+        <div id="threeHeader" class="tabHeader">
+            <h2>Education</h2>
+        </div>
+
+        <div id="fourHeader" class="tabHeader">
+            <h2>Special Skills</h2>
+        </div>
+
+        <button class="tabLink" onclick="openTab('oneHeader', 'oneContent', this, 'red')" id="defaultOpen">Skills</button>
+        <button class="tabLink" onclick="openTab('twoHeader', 'twoContent', this, 'orange')">Experience</button>
+        <button class="tabLink" onclick="openTab('threeHeader', 'threeContent', this, 'green')">Education</button>
+        <button class="tabLink" onclick="openTab('fourHeader', 'fourContent', this, 'blue')">Etc.</button>
+
+        <div id='oneContent' class="tabContent">
+            <h3>Skills and Qualifications</h3>
+            <p>Software Developer, Full Stack Web Developer focused on high quality documentation and thorough debugging; comfortable leading and applying analysis to find solutions.</p>
+            <p>Relevant Coursework and Experience: Mathematics, Statistics, Object Oriented Programming, Data Structures, Project Management/Software Engineer Management, Embedded Applications, Persona Design, Prototype and UI Designs, Networking, REST</p>
+
+            <h3>Programming / Scripting Languages</h3>
+
+            <table>
+                <tr>
+                    <th>
+                        <ul>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </th>
+                    <th>
+                        <ul>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>MATLAB</li>
+                            <li>Prolog</li>
+                            <li>Scheme</li>
+                            <li>Arm Assembly</li>
+                            <li>OpenGL</li>
+                            <li>X</li>
+                        </ul>
+                    </th>
+                </tr>
+            </table>
+
+
+            <h3>Familiar Frameworks Tools and Technologies</h3>
+
+            <table>
+                <tr>
+                    <th>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Arduino</li>
+                            <li>Raspberry Pi</li>
+                            <li>Windows</li>
+                            <li>Unix</li>
+                            <li>Android</li>
+                            <li>iOS</li>
+                        </ul>
+                    </th>
+                    <th>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>Docker</li>
+                            <li>Unity Engine</li>
+                            <li>Blender</li>
+                            <li>Adobe Photoshop CS</li>
+                            <li>Adobe Premier Pro</li>
+                            <li>Adobe Illustrator CS</li>
+                            <li>WCAG Guidelines</li>
+                        </ul>
+                    </th>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+        <div id='twoContent' class="tabContent">
+            <h3>Bob Hertzberg for State Senate Campaign</h3>
+            <p>
+                <b>Intern</b><br />
+                <b>AUG 2018- DEC 2018</b><br>
+                Campaign Office intern adept at directing a team of campaign volunteers with a focus on task efficiency and voter outreach via the Neighbor-to-Neighbor letter program, leading up to Senator Bob Hertzberg’s reelection to the 2018 California State Senate midterm election, representing the 18th District.
+            </p>
+            <ul>
+                <li>Sent more than 10,000 hand-addressed letters to voters in California's 18th district.</li>
+                <li>Strenghtened management of volunteer and intern databases.</li>
+                <li>Engaged over 300 registered voters in the 18th District in English and Spanish</li>
+            </ul>
+
+            <h3>Hahaso no Mori Nursery School</h3>
+            <p>
+                <b>English As Second Language Teacher</b><br />
+                <b>OCT 2016- AUG 2017</b><br />
+                Lead over 40 students at 3 different grade levels through lessons beginner English while communicating and cooperating with associate teachers to better pioneer a recently formed English teaching program .
+            </p>
+            <ul>
+                <li>Developed 8 hours of lesson plans each week</li>
+                <li>Lead lessons focused on daily beginner conversation, vocabulary, and writing using the alphabet</li>
+                <li>Assisted students with instruction in English and Japanese</li>
+            </ul>
+
+        </div>
+
+        <div id='threeContent' class="tabContent">
+            <p>
+                Bachelor of Science, Computer Science<br />
+                <i>California State University Northridge, California</i><br />
+                <br />
+                CSUN International Program, Japan<br />
+                <i>University of Tsukuba, Ibaraki, Japan</i><br />
+                <br />
+                Fluent in English and Spanish, Intermediate Japanese
+            </p>
+
+        </div>
+
+        <div id='fourContent' class="tabContent">
+            <p>etc.</p>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <h2>Contact</h2>
+
+        <div class="footerContactInfo" id="contact">
+            <p>
+                <b>Erin Vasquez</b><br>
+                e-mail: erin.vasquez@gmail.com<br>
+                telephone: 818-314-4803
+            </p>
+        </div>
+
+        <p>"The only true wisdom is in knowing you know nothing." - Socrates</p>
+
+    </div>
+
+    <script>
+
+        // Show only our current tab and hide all others
+        function openTab(headerName, contentName, elmnt, color) {
+
+            var i, tabheader, tabcontent, tablinks;
+
+            tabheader = document.getElementsByClassName("tabHeader");
+            tabcontent = document.getElementsByClassName("tabContent");
+
+            for (i = 0; i < tabcontent.length; i++) {
+                tabheader[i].style.display = "none";
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tabLink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            document.getElementById(headerName).style.display = "block";
+            document.getElementById(contentName).style.display = "block";
+
+            elmnt.style.backgroundColor = color;
+        }
+
+        document.getElementById("defaultOpen").click();
+
+    </script>
+
+</body>
+
+</html>

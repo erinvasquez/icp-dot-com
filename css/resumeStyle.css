@@ -1,0 +1,160 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: url('images/White Snake Dark Gaussian Blur.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-origin: padding-box;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+}
+
+.darkPanel {
+    align-content: center;
+    text-align: left;
+    margin: 0%;
+    padding-top: 63.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-bottom: 63.5%;
+    background: #1f1f1f;
+    color: white;
+}
+
+.darkPanel button {
+    border: 2px solid white;
+}
+
+.lightPanel {
+    align-content: center;
+    text-align: left;
+    margin: 0%;
+    padding-top: 63.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-bottom: 63.5%;
+    background: #ffffff;
+    color: black;
+}
+
+    .lightPanel p {
+        font-size: 20px;
+    }
+
+    .lightPanel button {
+        color: black;
+        border: 2px solid black
+    }
+
+
+.footer {
+    align-content: center;
+    text-align: center;
+    margin: 0%;
+    padding-top: 0.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-bottom: 0.5%;
+    background: #1f1f1f;
+}
+
+    .footer h2 {
+        text-align: left;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+
+    .footerContactInfo {
+        text-align: left;
+    }
+    
+    .footerContactInfo p {
+        font-size: 24px;
+    }
+
+/*
+         Landing page button that leads to other places on site
+        */
+.mainButton {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+.tabLink {
+    background-color: #555;
+    color: white;
+    float: left;
+    Border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px;
+    16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+    .tabLink:hover {
+        background-color: #777;
+    }
+
+.tabHeader {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+.tabContent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#oneHeader {
+    background-color: red;
+}
+
+#oneContent {
+    background-color: red;
+}
+
+#twoHeader {
+    background-color: orange;
+}
+
+#twoContent {
+    background-color: orange;
+}
+
+#threeHeader {
+    background-color: green;
+}
+
+#threeContent {
+    background-color: green;
+}
+
+#fourHeader {
+    background-color: blue;
+}
+
+#fourContent {
+    background-color: blue;
+}
