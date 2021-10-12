@@ -7,16 +7,18 @@
     -->
 
 <head>
-    <title>Erin Vasquez</title>
+    <title>INVISIBLE CHAIR PROJECT</title>
     <meta charset="UTF-8" />
     <meta name="author" content="Erin Vasquez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- This makes it pretty on all screens apparently -->
-    <meta name="description" content="My professional website." />
-    <meta name="revised" content="Erin Vasquez, 1/12/2021" />
+    <meta name="description" content="Home to the wonders of the universe." />
+    <meta name="revised" content="Erin Vasquez, 10/12/2021" />
     <meta http-equiv="Content-Script-Type" content="text/JavaScript" />
     <link rel="stylesheet" href="/css/mainStyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" src="buttonclicks.js"></script>
 
 </head>
 
@@ -25,54 +27,30 @@
     <div class="landingPanel" id="top">
         <h2>"The right man in the wrong place can make all the difference."</h2>
         <form>
-            <button class="mainButton" onclick="window.location.href='#resume'">Résumé</button>
-            <button class="mainButton" onclick="window.location.href='#portfolio'">Portfolio</button>
+            <button class="mainButton" onclick="window.location.href='./resume.html'">Résumé</button>
+            <button class="mainButton" onclick="window.location.href='./portfolio.html'">Portfolio</button>
             <button class="mainButton" onclick="window.location.href='#contact'">Contact</button>
-            <button class="mainButton" onclick="window.open('https://www.patreon.com/invisiblechairproject?fan_landing=true','_blank')">Donate</button>
-            <button class="mainButton" onclick="window.open('https://github.com/OvercastEleven/overcasteleven.github.io','_blank')">GitHub</button>
         </form>
         <br />
         <br />
         <br />
-        <video width="640" height="360" autoplay muted>
-            <source src="./videos/prototypefootage.mp4" type="video/mp4">
-            The following browser does not support video.
-        </video>
+
+        <div style="text-align:center;">
+            <video class="videoDiv" width="600" autoplay muted>
+                <source src="./videos/prototypefootage.mp4" type="video/mp4">
+                The following browser does not support the video tag.
+            </video>
+        </div>
+
         <br />
         <br />
-        <p style="margin-left: 33%; margin-right: 33%;">This website is an example static HTML website, styled in CSS. Thanks for taking a click onto this website. If you're interested enough, please take a look at some of my work in computer simulations and art.</p>
+        <p style="margin-left: 33%; margin-right: 33%;">Home to all who wish to live in awe of the universe. </p>
 
     </div>
 
-    <div class="darkPanel">
+    <div>
 
-        <div id="resume" style="align-content:center; padding-top:25%;">
-            <h2><i>Someone to fill in a niche at the workplace, perhaps?</i></h2>
-            <button class="mainButton" onclick="window.open('./resume.html','_blank')">Résumé</button>
-            <button class="mainButton" onclick="window.location.href='#top'">Back</button>
-        </div>
-
-
-
-
-    </div>
-
-    <div class="lightPanel">
-
-        <div id="portfolio" style="align-content:center; padding-top:25%;">
-            <h2>Take a look at some cool stuff I have.</h2>
-            <button class="mainButton" onclick="window.open('./portfolio.html','_blank')">Portfolio</button>
-            <button class="mainButton" onclick="window.location.href='#top'">Back</button>
-        </div>
-
-
-        <!--
-        1) Elevator PItch. Let them understand me, what I can do, and what I'm looking for. @ to 3 paragraph summary. Things ive worked on, my superpower, my personality. Avoid life story.
-        Have examples of best work like a gallery. Show off some work. LIke how many hours spent
-        practicing or something. Don't put EVERYTHING, just the good stuff. Avoiding showing off any in-progress works. Keep the links professional and job related.. LIke sites I contribute to or that I've built. Or anywhere it looks like I'm an expert.
-        Include testimonials. Avoid bragging with testimonials. Include myself visualized. VECTOR ART yASELF MAN.
-        A page for each section of your resume sounds awesome. Try using different images for each as an eyecatch. INclude contact info and links at some point (bottom most likely).
-        -->
+        <button class="mainButton" onclick="countAClick()">Use This Button</button>
 
     </div>
 
@@ -90,36 +68,6 @@
         <p>"The only true wisdom is in knowing you know nothing." - Socrates</p>
 
     </div>
-
-    <script>
-
-        // Show only our current tab and hide all others
-        function openTab(headerName, contentName, elmnt, color) {
-
-            var i, tabheader, tabcontent, tablinks;
-
-            tabheader = document.getElementsByClassName("tabHeader");
-            tabcontent = document.getElementsByClassName("tabContent");
-
-            for (i = 0; i < tabcontent.length; i++) {
-                tabheader[i].style.display = "none";
-                tabcontent[i].style.display = "none";
-            }
-
-            tablinks = document.getElementsByClassName("tabLink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-            }
-
-            document.getElementById(headerName).style.display = "block";
-            document.getElementById(contentName).style.display = "block";
-
-            elmnt.style.backgroundColor = color;
-        }
-
-                //document.getElementById("defaultOpen").click();
-
-    </script>
 
 </body>
 

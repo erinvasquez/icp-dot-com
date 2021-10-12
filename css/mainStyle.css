@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+
     background: url('../images/White Snake Dark Gaussian Blur.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -11,11 +12,18 @@ body {
     background-attachment: fixed;
     background-clip: border-box;
     background-origin: padding-box;
+
     color: white;
     margin: 0%;
     padding: 0%;
     max-width: 100%;
 }
+
+.videoDiv {
+    margin: 0 auto;
+    width: 400px;
+}
+
 /*
         [Section 1] is the "landing pad" intro that everyone sees before actual contact
         */
@@ -136,7 +144,7 @@ body {
     outline: none;
     cursor: pointer;
     padding: 14px;
-    16px;
+    /*16px;*/
     font-size: 17px;
     width: 25%;
 }
