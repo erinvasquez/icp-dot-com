@@ -1,20 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>PHP page testing</h1>
+
+
 <?php
+// Single line comment
+# Also a comment
 
-// I'm guessing these are variables
-$dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = '';
-$dbname = 'button_database';
+/*
+ And this one too
+ Nice
 
-// comments
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
-mysqli_select_db($dbname, $conn);
 
-$result = mysqli_query("select * from users", $conn);
-//while ($row = mysqli_fetch(assoc($result)) {
-//   print_r($row);
-//}
+ yeeeeeeeah boi
+ */
 
-print $result;
-print $conn;
+echo "Hello world~";
+
+// This is a php variable
+$someText = "10101010101010101010101010101";
+echo "My final message: " . $someText . ": change the world!";
+
+echo "Today is " . date("Y/m/d") . "<br>";
+
 ?>
+
+</body>
+</html>
