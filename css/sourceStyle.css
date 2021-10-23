@@ -1,0 +1,46 @@
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+
+    background: url('../images/White Snake Dark Gaussian Blur.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-origin: padding-box;
+
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+}
+
+
+/*
+    A centered table, done by keeping the margins on
+    the left and right automatically set.
+*/
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.mainButton {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+
+    margin: 4px 4px;
+    
+    cursor: pointer;
+}
