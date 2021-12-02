@@ -4,7 +4,6 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-
     background: url('../images/White Snake Dark Gaussian Blur.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -12,11 +11,8 @@ body {
     background-attachment: fixed;
     background-clip: border-box;
     background-origin: padding-box;
-
     color: white;
-    margin: 0%;
     padding: 0%;
-    max-width: 100%;
 }
 
 
@@ -43,4 +39,53 @@ table.center {
     margin: 4px 4px;
     
     cursor: pointer;
+}
+
+/*IDs*/
+
+#title {
+    background-color: #101003;
+}
+
+div#main_container {
+    width: 960px;
+    height: 800px;
+    overflow: auto;
+    margin: auto;
+    background-color: #101003;
+    border-radius: 11px;
+}
+
+div#nav_menu{
+    width: 280px;
+    height: 750px;
+    float: left; /*Our main_content div floats to the right
+        of this thanks to its margin settings*/
+    /*margin: 100px;*/
+    font-size: 150%;
+    text-transform: uppercase; /*Makes all of our text uppercase*/
+}
+
+ul#nav a {
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    color: #101003;
+}
+
+ul#nav li{
+    margin:10px 10px; /*top right bottom left*/
+    padding: 10px 10px 10px 10px; /*TOP RIGHT BOTTOM LEFT*/
+    list-style: none;
+    position: relative;
+    background: #232308;
+}
+
+ul#nav li:hover{
+    background:#dcebeb;
+    -webkit-transform: translate(-3px) scale(1.05);
+    -webkit-box-shadow: 0px 2px 7px #999;
+    box-shadow: 0px 2px 7px #999;
+    -webkit-animation: all 0.15s linear;
+    z-index: 1000;
 }
