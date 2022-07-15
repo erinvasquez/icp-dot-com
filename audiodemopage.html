@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>INVISIBLE CHAIR PROJECT - Audio Demo</title>
+
+    <meta charset="UTF-8" />
+    <meta name="author" content="Erin Vasquez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- This makes it pretty on all screens apparently -->
+    <meta name="description" content="Home to wonders of the universe." />
+    <meta name="revised" content="Erin Vasquez, 7/8/2022" />
+
+    <meta http-equiv="Content-Script-Type" content="text/JavaScript" />
+    <!-- <link rel="stylesheet" href="/css/sourceStyle.css"> -->
+    <link rel="stylesheet" href="./css/sourceStyle.css">
+
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Another stylesheet?-->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--JS SCRIPTS
+    <script type="text/javascript" src="js/buttonclicks.js"></script> -->
+    <script src="./js/audiosynth.js"></script>
+    <script language="javascript" type="text/javascript">
+        <!--
+        // with help from https://keithwhor.github.io/audiosynth/
+
+
+
+
+        var fnPlayNote = function (note, octave) {
+            src = audioSynth.generate(selectSound.value, note, octave, 2);
+            container.addEventListener('ended', function () { container = null; });
+        };
+
+
+
+
+
+
+
+
+        //-->
+    </script>
+
+</head>
+
+<body>
+
+    <header id="title"><h1>INVISIBLE CHAIR PROJECT - Audio Demo</h1></header>
+
+    
+
+    <div id="main_container">
+
+        <div id="nav_menu">
+
+            <ul id="nav">
+                <li><a href="./sourcepage.html">THE INVISIBLE CHAIR PROJECT</a></li>
+                <li><a href="./blogpage.html">Blog</a></li>
+                <li><a href="./audiodemopage.html">Audio Demo</a></li>
+                <li><a href="./resumepage.html">Resume</a></li>
+                <li><a href="./aboutpage.html">About this site</a></li>
+            </ul>
+
+        </div>
+
+        <div id="main_content">
+            
+        <noscript>Sorry, JavaScript needed to use this page!</noscript>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
